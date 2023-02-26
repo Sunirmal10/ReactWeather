@@ -1,0 +1,317 @@
+.moreDetails{
+display: flex;
+width: 35vmin;
+height: 18vmin;
+font-size: 2vmin;
+padding: 2.5vmin;
+gap: 0.5vmin;
+border-radius: 5vmin;
+background-color: #FFFFFF;
+
+
+.head{
+    display: flex;
+    padding: 1vmin 2vmin 0 2vmin;
+    justify-content: space-between;
+    font-size: 2vmin;
+
+    .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5vmin;
+        border-radius: 1.5vmin;
+        color: #FFFFFF;
+        height: 4.5vmin;
+        aspect-ratio: 1;
+        background-color: #5C9CE5;
+    }
+
+}
+
+.mid{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 2.5vmin;
+    font-weight: 400;
+    gap: 1.2vmin;
+
+    span{
+        font-size: 3.5vmin;
+        font-weight: 600;
+    }
+}
+
+.bottom{
+    display: flex;
+}
+
+}
+
+.humidity{
+    flex-direction: column;
+
+    .humid{
+        gap: 2.5vmin;
+        justify-content: center;
+
+        label{
+            font-size: 2vmin;
+            font-weight: 300;
+            color:#AEAEAE;
+
+            .container{
+                display: flex;
+                height: 1.5vmin;
+                width: 8.5vmin;
+                background-color: #DCDCDC;
+                border-radius: 1vmin;
+
+                .good{
+                    width: 100%;
+                    background-color: #5C9CE5;
+                    border-radius: 1vmin;
+                }
+
+                .normal{
+                    width: 100%;
+                    background-color: #5C9CE5;
+                    border-radius: 1vmin;
+                }
+
+                .bad{
+                    width: 30%;
+                    background-color: #5C9CE5;
+                    border-top-left-radius: 1vmin;
+                    border-bottom-left-radius: 1vmin;
+                }
+
+            }
+        }
+    }
+
+    }
+
+.precipitation{
+    flex-direction: column;
+
+    .precipitate{
+        display: flex;
+        justify-content: center;
+        gap: 1vmin;
+
+        label{
+
+            font-size: 2vmin;
+            font-weight: 300;
+            color:#AEAEAE;
+
+            .container2{
+                display: flex;
+                width: 2.5vmin;
+                height: 1.5vmin;
+                border-radius: 1vmin;
+                background-color: #DCDCDC;
+            }
+
+            .value{
+                background-color: #5C9CE5;
+                border-top-left-radius: 1vmin;
+                border-bottom-left-radius: 1vmin;
+            
+            }
+        }
+       
+    }
+
+  
+}
+
+.uvi{
+    flex-direction: column;
+    
+    .uv{
+        display: flex;
+        justify-content: center;
+        gap: 1.5vmin;
+
+        label{
+
+            font-size: 2vmin;
+            font-weight: 300;
+            color:#AEAEAE;
+
+            .container2{
+                display: flex;
+                width: 5vmin;
+                height: 1.5vmin;
+                border-radius: 1vmin;
+                background-color: #DCDCDC;
+            }
+
+            .value{
+                background-color: #5C9CE5;
+                border-top-left-radius: 1vmin;
+                border-bottom-left-radius: 1vmin;
+            
+            }
+        }
+       
+    }
+    
+}
+
+.feelsLike{
+  flex-direction: column;
+
+    .feel{
+        display: flex;
+        flex-direction: column;
+        padding: 0 2vmin;
+        justify-content: center;
+
+        .label{
+            display: flex;
+            justify-content: space-between;
+            font-size: 2vmin;
+            font-weight: 300;
+            color:#AEAEAE;
+        }
+            .container2{
+                display: flex;
+                width: 100%;
+                height: 1.5vmin;
+                border-radius: 1vmin;
+                background-color: #DCDCDC;
+            }
+
+            .value{
+                width: 60%;
+                background-color: #5C9CE5;
+                border-top-left-radius: 1vmin;
+                border-bottom-left-radius: 1vmin;
+            
+            }
+        
+    }
+
+}
+.chances{
+  flex-direction: column;
+
+    .chance{
+        display: flex;
+        flex-direction: column;
+        padding: 0 2vmin;
+        justify-content: center;
+
+        .label{
+            display: flex;
+            justify-content: space-between;
+            font-size: 2vmin;
+            font-weight: 300;
+            color:#AEAEAE;
+        }
+            .container2{
+                display: flex;
+                width: 100%;
+                height: 1.5vmin;
+                border-radius: 1vmin;
+                background-color: #DCDCDC;
+            }
+
+            .value{
+                width: 42%;
+                background-color: #5C9CE5;
+                border-top-left-radius: 1vmin;
+                border-bottom-left-radius: 1vmin;
+            
+            }
+        
+    }
+
+}
+
+.wind{
+    flex-direction: column;
+    position: relative;
+
+    .data{
+        position: absolute;
+        top: 4.5vmin;
+        left: 6vmin;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5vmin;
+        font-size: 2vmin;
+        font-weight: 300;
+        color: #AEAEAE;
+        z-index: 10;
+
+        .first{
+            display: flex;
+            gap: 6.5vmin;
+        }
+        .second{
+            display: flex;
+            gap: 21vmin;
+        }
+        .third{
+            display: flex;
+            gap: 25vmin;
+        }
+    }
+
+    .middle{
+        position: absolute;
+        top: 1vmin;
+        left: 8vmin;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+
+        .pointer{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1vmin;
+            background-color: transparent;
+            height: 10vmin;
+            aspect-ratio: 0.5;
+            transform: rotate(-40deg);
+
+            .cursor{
+                display: flex;
+                width: 0;
+                height: 0;
+                padding-top: 0.5vmin;
+                border-style: solid;
+                border-width: 0 1vmin 4vmin 1vmin;
+                border-color: transparent transparent #5C9CE5 transparent;
+            }
+
+            .center{
+
+                display: flex;
+                height: 2vmin;
+                width: 2vmin;
+                border-radius: 50%;
+                background-color: #5C9CE5;
+            }
+          
+        }
+
+        .value{
+            position: absolute;
+            font-size: 3vmin;
+            font-weight: 600;
+            top: 14vmin;
+        }
+
+    }
+}

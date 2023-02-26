@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+*{
+    --radius: 8vmin;
+    
+}
+body{
+    background-color: #B5D8FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5vmin;
+    font-weight: 500;
+}
+
+.main{
+
+    display: flex;
+    background-color: #5C9CE5;
+    background-image: url('../../public/images/sky.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 42vmin 90vmin;
+    margin: 10vmin;
+    border-radius:var(--radius);
+
+    .side{
+        display: flex;
+        flex-direction: column;
+        padding: 8vmin 6vmin;
+        flex: 1;
+        gap: 10vmin;
+
+        .buttons{
+            display: flex;
+            align-items: center;
+            gap: 8.5vmin;
+
+            .add{
+                display: flex;
+                border-radius: 2vmin;
+                cursor: pointer;
+            }
+
+            .shift{
+                display: flex;
+                gap: 1vmin;
+
+                .dot{
+                    height: 1vmin;
+                    aspect-ratio: 1;
+                    background-color: #9DC3EF;
+                    border-radius: 1vmin;
+
+                }
+
+                .long{
+                    width: 3vmin;
+                    background-color: #FFFFFF;
+                }
+
+            }
+
+            .toggle{
+                display: flex;
+            
+
+                label{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8.5vmin;
+                    width: 5.5vmin;
+                   height: 2vmin;
+                   font-size: 1.5vmin;
+                    position: relative;
+                    border-radius: 1vmin;
+                    background-color: #DCDCDC;
+                    cursor: pointer;
+
+                    .c{
+                        display: flex;
+                        color: #FFFFFF;    
+                    }
+
+                    .F{
+                        display: flex;
+                        color:#FFFFFF;
+                    }
+
+                    .circle{
+                        position: absolute;
+                        display: flex;
+                        background-color: #FFFFFF;
+                        height: 3.5vmin;
+                        top: -0.75vmin;
+                        left: -0.5vmin;
+                        aspect-ratio: 1;
+                        border-radius: 50%;
+                        justify-content: center;
+                        align-items: center;
+                        transition: all 150ms linear;
+
+                    }
+
+                   
+
+                        input[type=checkbox]{
+                     
+                            display: none;
+                            &:checked + .circle{
+                               
+                            left: 3vmin;
+                        
+                            }
+
+                        }
+
+                }
+
+                
+               
+            }
+        }
+
+        .sideDetails{
+            display: flex;
+            color: #FFFFFF;
+            justify-content: space-between;
+            font-weight: 300;
+
+            .sideLeft{
+                display: flex;
+                flex-direction: column;
+                font-size: 2vmin;
+                font-weight: 300;
+                gap:1.5vmin;
+                span{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap:1vmin;
+                }
+
+            }
+
+            .sideRight{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap:1.5vmin;
+                span{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap:1vmin;
+                }
+            }
+        }
+
+        .carousel{
+            display: flex;
+            gap: 1.5vmin;
+            align-items: center;
+            
+
+            .center{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                .temp{
+                    display: flex;
+                    flex: 2.5;
+                    align-items: center;
+                    font-weight: 400;
+                    font-size: 15vmin;
+                    color: #FFFFFF;
+                }
+
+                .day{
+                    display: flex;
+                    flex: 1;
+                    color: #FFFFFF;
+                    font-size: 3.5vmin;
+                    font-weight: 300;
+                    gap: 1.5vmin;
+                    align-items: center;
+                }
+            }
+
+            .left, .right{
+                display: flex;
+                font-weight: 500;
+                font-size: 5vmin;
+                color: #9DC3EF;
+                cursor: pointer;
+            }
+
+            .left{
+                padding-right: 1vmin;
+                padding-bottom: 5vmin;
+            }
+            .right{
+                padding-left: 1vmin;
+                padding-bottom: 5vmin;
+            }
+        }
+    }
+
+    .mainBody{
+        display: flex;
+        flex-direction: column;
+        background-color: #E4F1FF;
+        flex: 3.5;
+        padding:var(--radius);
+        border-radius:var(--radius);
+        gap: 7vmin;
+
+        .header{
+            display: flex;
+            gap: 3vmin;
+
+            :nth-child(n){
+                cursor: pointer;
+            }
+
+            .title{
+                display: flex;
+                flex: 8;
+                flex-direction: column;
+            }
+
+            .more{
+                display: flex;
+                flex: 0.5;
+                font-size: 4vmin;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .profile{
+                display: flex;
+                flex: 0.5;
+                justify-content: flex-end;
+                align-items: center;
+
+                img{
+                    display: flex;
+                    height: 6.5vmin;
+                    border-radius: 2vmin;
+                }
+            }
+        }
+
+        .display{
+            display: flex;
+            flex-direction: column;
+            background-color: #FFFFFF;
+            padding: 4.5vmin 5vmin;
+            border-radius: 5vmin;
+
+            .displayHeader{
+                display: flex;
+                gap: 4vmin;
+                :nth-child(n){
+                    cursor: pointer;
+                }
+
+                .upcomingHours{
+                    display: flex;
+                    padding: 0.6vmin 0.2vmin 0.6vmin 0.9vmin;
+                    flex: 7;
+                }
+
+                .rain{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0.6vmin 0.2vmin 0.6vmin 0.9vmin;
+                    background-color: #F1F1F1;
+                    border-radius: 1.5vmin;
+                    color: #999999;
+                    flex: 2.2;
+                    font-size: 2vmin;
+                    font-weight: 400;
+                }
+
+                .nextDays{
+                    display: flex;
+                    flex: 1.4;
+                    justify-content: center;
+                    padding: 0.6vmin 0 0.6vmin 0.9vmin;
+                    align-items: center;
+                    border-radius: 1.5vmin;
+                    background-color: #F1F1F1;
+                    font-size: 2vmin;
+                 
+
+                }
+            }
+
+            .displayBody{
+                display: flex;
+                padding-top: 4.5vmin;
+                gap: 1.5vmin;
+                justify-content: center;
+                flex-direction: column;
+
+                .displayTop{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 2vmin;
+                    padding-left: 1.5vmin;
+                    font-weight: 300;
+
+                    .timing{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1.5vmin;
+
+                        .time, .icon, .tempnow{
+                            display: flex;
+                            justify-content: center;
+                        }
+
+                      
+
+                    }
+
+                  
+                   
+                }
+            }
+        }
+
+        .moreDetailsHead{
+            position: relative;
+            top:1vmin;
+        }
+        
+        .moreDetail{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 5vmin;
+        }
+    }
+    
+}
